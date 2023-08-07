@@ -67,7 +67,7 @@ export function Traduttore() {
                     style={{
                       opacity: currentLanguageCode === code ? 0.5 : 1,
                     }}
-                  ></span>
+                   />
                   {name}
                 </span>
               </li>

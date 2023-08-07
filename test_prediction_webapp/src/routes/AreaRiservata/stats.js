@@ -389,8 +389,8 @@ function Stats() {
                             paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
                             currentPageReportTemplate="{totalRecords} elementi" globalFilter={globalFilter} header={header}>
 
-                            <Column field="url" header="Link" sortable ></Column>
-                            <Column field="createdAt" header="Data" body={createAtBodyTemplate} sortable ></Column>
+                            <Column field="url" header="Link" sortable  />
+                            <Column field="createdAt" header="Data" body={createAtBodyTemplate} sortable  />
 
                         </DataTable>
                     </div>

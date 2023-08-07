@@ -254,7 +254,7 @@ function BlockedWebSite() {
         <div className='fitBody'>
             <Toast ref={toast} />
             <div className="card">
-                <Toolbar className="mb-4" start={leftToolbarTemplate} end={rightToolbarTemplate}></Toolbar>
+                <Toolbar className="mb-4" start={leftToolbarTemplate} end={rightToolbarTemplate} />
 
                 <DataTable ref={dt} value={results} selection={selectedResults} onSelectionChange={(e) => setSelectedResults(e.value)}
                     dataKey="id" paginator rows={10} rowsPerPageOptions={[5, 10, 25]} sortField="id" sortOrder={-1}
@@ -263,11 +263,11 @@ function BlockedWebSite() {
                     paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
                     currentPageReportTemplate="{totalRecords} elementi" globalFilter={globalFilter} header={header}>
 
-                    <Column selectionMode="multiple" exportable={false}></Column>
-                    <Column field="url" header="Link" sortable ></Column>
-                    <Column field="status" header="Stato" body={statusBodyTemplate} sortable ></Column>
-                    <Column field="createAt" header="Data" body={createdAtBodyTemplate} sortable ></Column>
-                    <Column body={actionBodyTemplate} exportable={false} ></Column>
+                    <Column selectionMode="multiple" exportable={false} />
+                    <Column field="url" header="Link" sortable  />
+                    <Column field="status" header="Stato" body={statusBodyTemplate} sortable  />
+                    <Column field="createAt" header="Data" body={createdAtBodyTemplate} sortable  />
+                    <Column body={actionBodyTemplate} exportable={false}  />
 
                 </DataTable>
             </div>

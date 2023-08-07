@@ -126,7 +126,7 @@ function AreaRiservata() {
         <div className='fitBody'>
             <Toast ref={toast} />
             <div className="card">
-                <Toolbar className="mb-4" end={rightToolbarTemplate}></Toolbar>
+                <Toolbar className="mb-4" end={rightToolbarTemplate} />
 
                 <DataTable ref={dt} value={results}
                     dataKey="id" paginator rows={10} rowsPerPageOptions={[5, 10, 25]} sortField="id" sortOrder={-1}
@@ -135,11 +135,11 @@ function AreaRiservata() {
                     paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
                     currentPageReportTemplate="{totalRecords} elementi" globalFilter={globalFilter} header={header}>
 
-                    <Column field="url" header="Link" sortable ></Column>
-                    <Column field="status" header="Stato" sortable ></Column>
-                    <Column field="createAt" header="Data" body={createAtBodyTemplate} sortable ></Column>
-                    <Column field="notaOperatore" header="Nota operatore" sortable ></Column>
-                    <Column body={actionBodyTemplate} exportable={false} ></Column>
+                    <Column field="url" header="Link" sortable  />
+                    <Column field="status" header="Stato" sortable  />
+                    <Column field="createAt" header="Data" body={createAtBodyTemplate} sortable  />
+                    <Column field="notaOperatore" header="Nota operatore" sortable  />
+                    <Column body={actionBodyTemplate} exportable={false}  />
 
                 </DataTable>
             </div>

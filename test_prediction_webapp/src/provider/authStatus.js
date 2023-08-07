@@ -42,7 +42,7 @@ export function AuthStatus(props) {
             <div className="d-flex flex-row align-items-center w-100">
               <div className="row w-100 m-0">
                 <div className="col-4 d-flex flex-row align-items-center justify-content-center">
-                  <i className="pi pi-sun textWhite mr-2"></i><InputSwitch checked={checked} onChange={switchTheme} /><i className="pi pi-moon textWhite ml-2"></i>
+                  <i className="pi pi-sun textWhite mr-2" /><InputSwitch checked={checked} onChange={switchTheme} /><i className="pi pi-moon textWhite ml-2" />
                 </div>
                 <div className="loginBox col-4">
                       <Traduttore />
@@ -108,7 +108,7 @@ export function AuthStatus(props) {
                   {/* <Avatar icon="pi pi-user" style={{ backgroundColor: '#363636', color: '#ffffff' }} shape="circle" /> */}
                 </div>
                 <div className="col-4 d-flex flex-row align-items-center justify-content-center">
-                  <i className="pi pi-sun textWhite mr-2"></i><InputSwitch checked={checked} onChange={switchTheme} /><i className="pi pi-moon textWhite ml-2"></i>
+                  <i className="pi pi-sun textWhite mr-2" /><InputSwitch checked={checked} onChange={switchTheme} /><i className="pi pi-moon textWhite ml-2" />
                 </div>
                 <div className="col-4">
                   <button

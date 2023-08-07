@@ -116,7 +116,7 @@ export default function Login(props) {
   return (
     <>
       <div className="d-flex justify-content-start align-items-center mt-2 ml-2">
-        <button className="d-flex align-items-center w-auto" type="submit" onClick={() => window.location.pathname = '/'}><i className="pi pi-arrow-left mr-2"></i>{translations.TornaIndietro}</button>
+        <button className="d-flex align-items-center w-auto" type="submit" onClick={() => window.location.pathname = '/'}><i className="pi pi-arrow-left mr-2" />{translations.TornaIndietro}</button>
       </div>
       <div className='fitBody d-flex justify-content-center flex-column'>
 
