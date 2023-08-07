@@ -28,7 +28,7 @@ export function Footer(props) {
                 <Link to={"/"}><img src={props.theme === 'light' ? logoBlack : logo} onError={(e) => e.target.src = props.theme === 'light' ? logoBlack : logo} alt="Logo" width="200" /></Link>
             </div> */}
             <div className="col-12 col-lg-4 d-flex justify-content-center align-items-center"
-            ></div>
+             />
             <div className="col-12 col-lg-4 d-flex justify-content-center align-items-center">
                 <div className="containerShareIcon">
                     <FacebookShareButton className="shareButton" url={url}>

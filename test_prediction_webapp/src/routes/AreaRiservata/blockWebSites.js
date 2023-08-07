@@ -191,16 +191,16 @@ function BlockWebSites() {
                     paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
                     currentPageReportTemplate="{totalRecords} elementi" globalFilter={globalFilter} header={header}>
 
-                    <Column selectionMode="multiple" exportable={false}></Column>
-                    <Column field="nome" header="Parola" sortable ></Column>
-                    <Column field="rank" header="Rank" sortable ></Column>
+                    <Column selectionMode="multiple" exportable={false} />
+                    <Column field="nome" header="Parola" sortable  />
+                    <Column field="rank" header="Rank" sortable  />
 
                 </DataTable>
                 <div className='d-flex justify-content-center align-items-center my-4'>
                     <Button label="Avvia elaborazione" icon="pi pi-play" className='w-auto' outlined onClick={saveResult} />
                 </div>
 
-                <Toolbar className="mb-4" end={rightToolbarTemplate}></Toolbar>
+                <Toolbar className="mb-4" end={rightToolbarTemplate} />
 
                 <DataTable ref={dt} value={results2}
                     dataKey="id"
@@ -222,7 +222,7 @@ function BlockWebSites() {
                     paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
                     currentPageReportTemplate="{totalRecords} elementi" globalFilter={globalFilter2} header={header2}>
 
-                    <Column field="date" header="Data" body={dateBodyTemplate} sortable ></Column>
+                    <Column field="date" header="Data" body={dateBodyTemplate} sortable  />
 
                 </DataTable>
             </div>
@@ -234,10 +234,10 @@ function BlockWebSites() {
                     value={result?.data?.status}
                 >
 
-                    <Column field="id" header="ID" sortable ></Column>
-                    <Column field="name" header="nome" sortable ></Column>
-                    <Column field="status" header="Stato" sortable ></Column>
-                    <Column field="message" header="Messaggio" sortable ></Column>
+                    <Column field="id" header="ID" sortable  />
+                    <Column field="name" header="nome" sortable  />
+                    <Column field="status" header="Stato" sortable  />
+                    <Column field="message" header="Messaggio" sortable  />
 
                 </DataTable>
             </Dialog>
