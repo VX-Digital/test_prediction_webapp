@@ -80,7 +80,7 @@ function AreaRiservata() {
     };
 
     const onInputChange = (e, name) => {
-        const val = (e.target && e.target.value) || '';
+        const val = ( e.target?.value) || '';
         let _result = { ...result };
 
         _result[`${name}`] = val;

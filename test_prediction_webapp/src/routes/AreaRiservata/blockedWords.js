@@ -148,7 +148,7 @@ function BlockedWords() {
     };
 
     const onInputChange = (e, name) => {
-        const val = (e.target && e.target.value) || e.value || '';
+        const val = ( e.target?.value) || e.value || '';
         let _result = { ...result };
 
         _result[`${name}`] = val;
