@@ -47,7 +47,7 @@ export function Footer(props) {
                 </div>
                 <div className="containerShareIcon">
                     <TwitterShareButton className="shareButton" url={url}>
-                        <TwitterIcon size={32} round={true} />
+                        <TwitterIcon size={32} round />
                     </TwitterShareButton>
                 </div>
                 <div className="containerShareIcon">
