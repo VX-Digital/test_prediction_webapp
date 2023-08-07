@@ -36,7 +36,7 @@ function BlockedWebSite() {
                 .then(res => {
                     setResults(res.data);
                 }).catch((e) => {
-                    console.log(e)
+                    
                 })
         }
         trovaRisultato();
@@ -84,7 +84,7 @@ function BlockedWebSite() {
                     toast.current.show({ severity: 'success', summary: 'Ottimo', detail: "Il sito è stato inserito nella lista di blocco", life: 3000 });
                 }).catch((e) => {
                     setSelectedStatus(null)
-                    console.log(e)
+                    
                     toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `Non è stato possibile aggiungere l'elemento alla lista di blocco. Messaggio errore: ${e.response?.data.detail !== undefined ? e.response?.data.detail : e.message}`, life: 3000 });
                 })
         } else {
@@ -101,7 +101,7 @@ function BlockedWebSite() {
                     toast.current.show({ severity: 'success', summary: 'Ottimo', detail: "Il sito è stato modificato con successo", life: 3000 });
                 }).catch((e) => {
                     setSelectedStatus(null)
-                    console.log(e)
+                    
                     toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `Non è stato possibile modificare l'elemento. Messaggio errore: ${e.response?.data.detail !== undefined ? e.response?.data.detail : e.message}`, life: 3000 });
                 })
         }
@@ -128,7 +128,7 @@ function BlockedWebSite() {
                 setResult(emptyResult);
                 toast.current.show({ severity: 'success', summary: 'Successful', detail: 'Elemento eliminato correttamente', life: 3000 });
             }).catch((e) => {
-                console.log(e)
+                
                 toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `Non è stato possibile eliminare l'elemento. Messaggio errore: ${e.response?.data.detail !== undefined ? e.response?.data.detail : e.message}`, life: 3000 });
             })
     };
@@ -150,7 +150,7 @@ function BlockedWebSite() {
                 setSelectedResults(null);
                 toast.current.show({ severity: 'success', summary: 'Successful', detail: 'Elementi eliminati correttamente', life: 3000 });
             }).catch((e) => {
-                console.log(e)
+                
                 toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `Non è stato possibile eliminare gli elementi. Messaggio errore: ${e.response?.data.detail !== undefined ? e.response?.data.detail : e.message}`, life: 3000 });
             })
     };
@@ -167,10 +167,10 @@ function BlockedWebSite() {
     const sync = async () => {
         await APIRequest('GET', 'siteList/sync')
             .then(res => {
-                console.log(res)
+                
                 toast.current.show({ severity: 'success', summary: 'Successful', detail: 'Sincronizzazione avviata correttamente', life: 3000 });
             }).catch((e) => {
-                console.log(e)
+                
                 toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `Non è stato possibile avviare la sincronizzazione. Messaggio errore: ${e.response?.data.detail !== undefined ? e.response?.data.detail : e.message}`, life: 3000 });
             })
     }

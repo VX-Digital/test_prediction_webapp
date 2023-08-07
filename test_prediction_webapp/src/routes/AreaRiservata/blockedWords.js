@@ -34,7 +34,7 @@ function BlockedWords() {
                 .then(res => {
                     setResults(res.data);
                 }).catch((e) => {
-                    console.log(e)
+                    
                 })
         }
         trovaRisultato();
@@ -72,7 +72,7 @@ function BlockedWords() {
                     setResult(emptyResult);
                     toast.current.show({ severity: 'success', summary: 'Ottimo', detail: "La parola è stata inserita con successo", life: 3000 });
                 }).catch((e) => {
-                    console.log(e)
+                    
                     if (e.response?.data.detail.includes('already exists')) {
                         toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: "La parola è già stata inserita in precedenza e non è possibile reinserirla nel sistema", life: 3000 });
                     } else {
@@ -91,7 +91,7 @@ function BlockedWords() {
                     setResult(emptyResult);
                     toast.current.show({ severity: 'success', summary: 'Ottimo', detail: "La parola è stata modificata con successo", life: 3000 });
                 }).catch((e) => {
-                    console.log(e)
+                    
                     if (e.response?.data.detail.includes('already exists')) {
                         toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: "La modifica corrisponde ad una parola già inserita in precedenza non è possibile reinserirla nel sistema", life: 3000 });
                     } else {
@@ -120,7 +120,7 @@ function BlockedWords() {
                 setResult(emptyResult);
                 toast.current.show({ severity: 'success', summary: 'Successful', detail: 'Elemento eliminato correttamente', life: 3000 });
             }).catch((e) => {
-                console.log(e)
+                
                 toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `Non è stato possibile eliminare l'elemento. Messaggio errore: ${e.response?.data.detail !== undefined ? e.response?.data.detail : e.message}`, life: 3000 });
             })
     };
@@ -142,7 +142,7 @@ function BlockedWords() {
                 setSelectedResults(null);
                 toast.current.show({ severity: 'success', summary: 'Successful', detail: 'Elementi eliminati correttamente', life: 3000 });
             }).catch((e) => {
-                console.log(e)
+                
                 toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `Non è stato possibile eliminare gli elementi. Messaggio errore: ${e.response?.data.detail !== undefined ? e.response?.data.detail : e.message}`, life: 3000 });
             })
     };

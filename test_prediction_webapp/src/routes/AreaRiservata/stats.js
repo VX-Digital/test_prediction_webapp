@@ -72,7 +72,7 @@ function Stats() {
                         }
                     });
                 }).catch((e) => {
-                    console.log(e)
+                    
                 })
             await APIRequest('GET', 'genitore/')
                 .then(res => {
@@ -90,7 +90,7 @@ function Stats() {
                         }
                     });
                 }).catch((e) => {
-                    console.log(e)
+                    
                 })
             await APIRequest('GET', 'figlio/')
                 .then(res => {
@@ -108,7 +108,7 @@ function Stats() {
                         }
                     });
                 }).catch((e) => {
-                    console.log(e)
+                    
                 })
 
             let unique = onlyUniqueDate(date)
