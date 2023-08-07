@@ -39,7 +39,7 @@ function BlockWebSites() {
                 .then(res => {
                     setResults(res.data);
                 }).catch((e) => {
-                    console.log(e)
+                    
                 })
             let url = 'timeconsumingop?command=ProcessUrl&controller=WebSemantic&take=' + lazyParams.rows + '&skip=' + lazyParams.page
             await APIRequest('GET', url)
@@ -50,7 +50,7 @@ function BlockWebSites() {
                     setLazyParams({ first: lazyParams.first, rows: lazyParams.rows, page: lazyParams.page, pageCount: res.data.totalCount / lazyParams.rows, })
 
                 }).catch((e) => {
-                    console.log(e);
+                    
                     toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `Non è stato possibile visualizzare gli ordini da Alyante. Messaggio errore: ${e.response?.data !== undefined ? e.response?.data : e.message}`, life: 3000 });
                 })
         }
@@ -73,7 +73,7 @@ function BlockWebSites() {
                     toast.current.show({ severity: 'success', summary: "L'elaborazione è stata avviata con successo", detail: "Alla fine dell'esecuzione verrà prodotto un log consultabile nella tabella sottostante", life: 3000 });
                     window.location.reload()
                 }).catch((e) => {
-                    console.log(e)
+                    
                     toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `L'elaborazione non è stata avviata correttamente. Messaggio errore: ${e.response?.data.detail !== undefined ? e.response?.data.detail : e.message}`, life: 3000 });
                 })
         } else {
@@ -117,7 +117,7 @@ function BlockWebSites() {
 
             })
             .catch((e) => {
-                console.log(e);
+                
                 toast.current.show({
                     severity: "error",
                     summary: "Siamo spiacenti",
@@ -139,7 +139,7 @@ function BlockWebSites() {
 
             })
             .catch((e) => {
-                console.log(e);
+                
                 toast.current.show({
                     severity: "error",
                     summary: "Siamo spiacenti",

@@ -34,7 +34,7 @@ function SegnalazioneGuasti() {
                 .then(res => {
                     setResults(res.data);
                 }).catch((e) => {
-                    console.log(e)
+                    
                 })
         }
         trovaRisultato();
@@ -58,7 +58,7 @@ function SegnalazioneGuasti() {
                 setResult(emptyResult);
                 toast.current.show({ severity: 'success', summary: 'Ottimo', detail: "La segnalazione è stata modificata con successo", life: 3000 });
             }).catch((e) => {
-                console.log(e)
+                
                 toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `Non è stato possibile modificare la segnalazione. Messaggio errore: ${e.response?.data.detail !== undefined ? e.response?.data.detail : e.message}`, life: 3000 });
             })
     };

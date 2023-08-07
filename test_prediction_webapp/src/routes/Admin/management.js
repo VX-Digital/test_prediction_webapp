@@ -35,7 +35,7 @@ export function Management() {
                 .then(res => {
                     setResults(res.data);
                 }).catch((e) => {
-                    console.log(e)
+                    
                 })
         }
         trovaRisultato();
@@ -73,7 +73,7 @@ export function Management() {
                     setResult(emptyResult);
                     toast.current.show({ severity: 'success', summary: 'Ottimo', detail: "L'utente è stato inserito con successo", life: 3000 });
                 }).catch((e) => {
-                    console.log(e)
+                    
                     toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `Non è stato possibile aggiungere l'elemento. Messaggio errore: ${e.response?.data.detail !== undefined ? e.response?.data.detail : e.message}`, life: 3000 });
                 })
         } else {
@@ -88,7 +88,7 @@ export function Management() {
                     setResult(emptyResult);
                     toast.current.show({ severity: 'success', summary: 'Ottimo', detail: "L'utente è stato modificato con successo", life: 3000 });
                 }).catch((e) => {
-                    console.log(e)
+                    
                     toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `Non è stato possibile aggiungere l'elemento. Messaggio errore: ${e.response?.data.detail !== undefined ? e.response?.data.detail : e.message}`, life: 3000 });
                 })
         }
@@ -115,7 +115,7 @@ export function Management() {
                 setResult(emptyResult);
                 toast.current.show({ severity: 'success', summary: 'Successful', detail: 'Elemento eliminato correttamente', life: 3000 });
             }).catch((e) => {
-                console.log(e)
+                
                 toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `Non è stato possibile eliminare l'elemento. Messaggio errore: ${e.response?.data.detail !== undefined ? e.response?.data.detail : e.message}`, life: 3000 });
             })
     };
@@ -137,7 +137,7 @@ export function Management() {
                 setSelectedResults(null);
                 toast.current.show({ severity: 'success', summary: 'Successful', detail: 'Elementi eliminati correttamente', life: 3000 });
             }).catch((e) => {
-                console.log(e)
+                
                 toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `Non è stato possibile eliminare gli elementi. Messaggio errore: ${e.response?.data.detail !== undefined ? e.response?.data.detail : e.message}`, life: 3000 });
             })
     };

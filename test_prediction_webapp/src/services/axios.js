@@ -21,7 +21,7 @@ export const APIRequest = (method, path, data) => {
                     resolve(res);
                 })
                 .catch((e) => {
-                    console.log(e)
+                    
                     if (e.response !== undefined) {
                         if (e.response.data === "invalid password" || e.response.data === "username not found") {
                             alert(e.response.data);

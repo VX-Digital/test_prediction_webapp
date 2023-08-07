@@ -49,7 +49,7 @@ function App() {
             setToken(localStorage.getItem('token'));
             setuser(username)
           }).catch((e) => {
-            console.log(e);
+            
             localStorage.setItem('user', '')
             window.location.reload()
           })
