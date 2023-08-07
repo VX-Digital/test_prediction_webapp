@@ -283,7 +283,7 @@ function BlockedWebSite() {
                         value={result.url}
                         onChange={(e) => onInputChange(e, 'url')}
                         required
-                        autoFocus
+                        
                         className={classNames({ 'p-invalid': submitted && !result.url && !validateUrl(result.url) })}
                     />
                     {submitted && !result.url && !validateUrl(result.url) &&

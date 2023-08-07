@@ -236,7 +236,7 @@ function BlockedWords() {
                         Parola
                         <Button className='p-button-rounded tooltipButton ml-2' type="button" icon="pi pi-info" tooltip="Inserire parola che si desidera bloccare" tooltipOptions={{ position: 'top', mouseTrack: true, mouseTrackTop: 15 }} />
                     </label>
-                    <InputText id="nome" value={result.nome} onChange={(e) => onInputChange(e, 'nome')} required autoFocus className={classNames({ 'p-invalid': submitted && !result.nome })} />
+                    <InputText id="nome" value={result.nome} onChange={(e) => onInputChange(e, 'nome')} required  className={classNames({ 'p-invalid': submitted && !result.nome })} />
                     {submitted && !result.nome && <small className="p-error">La parola è obbligatoria.</small>}
                 </div>
                 <div className="field">
@@ -244,7 +244,7 @@ function BlockedWords() {
                         Rank
                         <Button className='p-button-rounded tooltipButton ml-2' type="button" icon="pi pi-info" tooltip="Inserire il peso della parola" tooltipOptions={{ position: 'top', mouseTrack: true, mouseTrackTop: 15 }} />
                     </label>
-                    <InputNumber id="rank" value={result.rank} onChange={(e) => onInputChange(e, 'rank')} required autoFocus />
+                    <InputNumber id="rank" value={result.rank} onChange={(e) => onInputChange(e, 'rank')} required  />
                 </div>
             </Dialog>
 

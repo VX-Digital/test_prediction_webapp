@@ -154,7 +154,7 @@ export default function Login(props) {
                   OTP
                   <Button className='p-button-rounded tooltipButton ml-2' type="button" icon="pi pi-info" tooltip={`Inserire il codice otp inviato sulla mail ${result.operatore?.mail}`} tooltipOptions={{ position: 'top', mouseTrack: true, mouseTrackTop: 15 }} />
                 </label>
-                <InputText id="otp" value={result.otp} onChange={(e) => onInputChange(e, 'otp')} required autoFocus />
+                <InputText id="otp" value={result.otp} onChange={(e) => onInputChange(e, 'otp')} required  />
                 <div className="d-flex justify-content-end">
                   <button className="resetOtpButton mt-2" onClick={resendOtp}>*{translations.NonHoRicevutoLOtp}</button>
                 </div>

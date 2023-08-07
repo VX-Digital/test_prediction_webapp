@@ -230,7 +230,7 @@ export function Management() {
                             Email
                             <Button className='p-button-rounded tooltipButton ml-2' type="button" icon="pi pi-info" tooltip="Nome utente per accedere alla piattaforma" tooltipOptions={{ position: 'top', mouseTrack: true, mouseTrackTop: 15 }} />
                         </label>
-                        <InputText id="email" value={result.mail} onChange={(e) => onInputChange(e, 'mail')} required autoFocus className={classNames({ 'p-invalid': submitted && !result.mail })} />
+                        <InputText id="email" value={result.mail} onChange={(e) => onInputChange(e, 'mail')} required  className={classNames({ 'p-invalid': submitted && !result.mail })} />
                         {submitted && !result.mail && <small className="p-error">L'email è obbligatoria.</small>}
                     </div>
                     <div className="field">
@@ -238,7 +238,7 @@ export function Management() {
                             Nome utente
                             <Button className='p-button-rounded tooltipButton ml-2' type="button" icon="pi pi-info" tooltip="Nome utente per accedere alla piattaforma" tooltipOptions={{ position: 'top', mouseTrack: true, mouseTrackTop: 15 }} />
                         </label>
-                        <InputText id="username" value={result.username} onChange={(e) => onInputChange(e, 'username')} required autoFocus className={classNames({ 'p-invalid': submitted && !result.username })} />
+                        <InputText id="username" value={result.username} onChange={(e) => onInputChange(e, 'username')} required  className={classNames({ 'p-invalid': submitted && !result.username })} />
                         {submitted && !result.username && <small className="p-error">Il nome utente è obbligatorio.</small>}
                     </div>
                     <div className="field">
@@ -246,7 +246,7 @@ export function Management() {
                             Password
                             <Button className='p-button-rounded tooltipButton ml-2' type="button" icon="pi pi-info" tooltip="Password per accedere alla piattaforma" tooltipOptions={{ position: 'top', mouseTrack: true, mouseTrackTop: 15 }} />
                         </label>
-                        <Password id="password" value={result.password} onChange={(e) => onInputChange(e, 'password')} toggleMask required autoFocus className={classNames({ 'p-invalid': submitted && !result.password })} />
+                        <Password id="password" value={result.password} onChange={(e) => onInputChange(e, 'password')} toggleMask required  className={classNames({ 'p-invalid': submitted && !result.password })} />
                         {submitted && !result.password && <small className="p-error">La password è obbligatoria.</small>}
                     </div>
                 </>
