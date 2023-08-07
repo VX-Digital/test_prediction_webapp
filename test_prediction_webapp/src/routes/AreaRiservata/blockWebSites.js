@@ -77,7 +77,7 @@ function BlockWebSites() {
                     toast.current.show({ severity: 'error', summary: 'Siamo spiacenti', detail: `L'elaborazione non è stata avviata correttamente. Messaggio errore: ${e.response?.data.detail !== undefined ? e.response?.data.detail : e.message}`, life: 3000 });
                 })
         } else {
-            toast.current.show({ severity: 'warn', summary: 'Attenzione!', detail: `È obbligatorio selezionare almeno una parola dalla lista per avviare l'elaborazione`, life: 3000 });
+            toast.current.show({ severity: 'warn', summary: 'Attenzione!', detail: "È obbligatorio selezionare almeno una parola dalla lista per avviare l'elaborazione", life: 3000 });
         }
 
     };
